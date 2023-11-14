@@ -1,12 +1,48 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
-    height: 100vh;
+    height: 100%;
     background-image: url(https://wallpapercave.com/wp/wp9728585.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   
-  }
+    
+}
+
+.listados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.pedido {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.resume {
+    padding-top: 20px;
+    padding-left: 150px;
+    margin-right: 0px;
+}
+
+.titulo{
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+
+
+}
+
+.ui.card{
+    margin-right: 15px;
+}

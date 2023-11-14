@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.footer {
+    margin-top: auto;
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2; 
+  }
+  
+
+.social-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.footer p {
+    color: #fff;
+    margin-top: 20px; // ajustar según sea necesario
+    font-size: 1rem;
+    font-weight: 300;
+    position: relative; 
+    z-index: 10; // Asegúrese de que el texto esté encima de las olas
+  }
+
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px; // Altura de las olas
+    background-size: 1000px 100px;
+    background-repeat: repeat-x;
+    z-index: -1; // Menor que el texto y el contenido del footer
+  }
+  
+
+.wave#wave1 {
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  animation: animateWavesReverse 4s linear infinite;
+  opacity: 0.5;
+}
+
+.wave#wave3 {
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  animation: animateWaves 3s linear infinite;
+  opacity: 0.2;
+}
+
+.wave#wave4 {
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  animation: animateWavesReverse 3s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position: 0 bottom;
+  }
+  100% {
+    background-position: 1000px bottom;
+  }
+}
+
+@keyframes animateWavesReverse {
+  0% {
+    background-position: 1000px bottom;
+  }
+  100% {
+    background-position: 0 bottom;
+  }
+}

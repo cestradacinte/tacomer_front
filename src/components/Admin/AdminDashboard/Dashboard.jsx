@@ -1,10 +1,9 @@
 import "./Dashboard.scss";
-import { Nevado } from '../../Nevado'
+import { Nevado } from "../../Nevado";
 import { Taco } from "../../Taco";
-
+import { Footer } from "../../Footer";
 export const Dashboard = () => {
   const Nombre = JSON.parse(localStorage.getItem("user")).first_name;
-
 
   return (
     <>
@@ -28,7 +27,7 @@ export const Dashboard = () => {
           <Nevado />
         </div>
       </div>
+      <Footer />
     </>
   );
 };
-

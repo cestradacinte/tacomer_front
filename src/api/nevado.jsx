@@ -7,9 +7,31 @@ export const createNevado = async (nevadoData) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        'Authorization': `Bearer ${localStorage.getItem("token")}`
+        Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
       body: JSON.stringify(nevadoData),
+    };
+
+    const response = await fetch(url, params);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const getNevados = async () => {
+  try {
+    const url = `${BASE_API}/api/nevado/`;
+    const params = {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${localStorage.getItem("token")}`,
+      },
     };
 
     const response = await fetch(url, params);

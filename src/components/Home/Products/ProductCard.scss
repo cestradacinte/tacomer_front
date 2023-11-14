@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  margin-right: 15px;
+}
+.ui.card {
+  margin: 15px !important;
+}
+.ui.card > .extra,
+.ui.cards > .card > .extra {
+  display: flex;
+  justify-content: center;
+}
+.ui.card > .content,
+.ui.cards > .card > .content {
+  text-align: center;
+}
+.ui.card > .content > .header + .description,
+.ui.card > .content > .meta + .description,
+.ui.cards > .card > .content > .header + .description,
+.ui.cards > .card > .content > .meta + .description {
+  font-size: 24px;
+}

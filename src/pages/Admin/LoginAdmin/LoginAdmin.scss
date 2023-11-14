@@ -1,0 +1,29 @@
+.login-admin {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://wallpapercave.com/wp/wp9728585.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__content {
+        padding: 50px;
+        width: 500px;
+        background-color: white;
+        box-shadow: 17px 15px 34px -1px rgba(0, 0, 0, 0.67);
+        -webkit-box-shadow: 17px 15px 34px -1px rgba(0, 0, 0, 0.67);
+        -moz-box-shadow: 17px 15px 34px -1px rgba(0, 0, 0, 0.67);
+        border-radius: 15px;
+    }
+
+        > h2 {
+            font-size: 35px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+
+}
